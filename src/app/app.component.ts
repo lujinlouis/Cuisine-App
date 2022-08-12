@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Assignment3-Yang';
+  oneTitle: string = 'Check out my new Recipe App!';
+
+  childTermsData: string;
+
+  captureEmittedData(emittedData: string) {
+    this.childTermsData = emittedData;
+  }
+
+  displayTerms = () => {
+
+    alert(this.childTermsData);
+  }
 }

@@ -1,0 +1,16 @@
+<p class="text-center h3 mt-4 mb-5">Cuisines</p>
+
+<!-- table -->
+<div class="d-flex justify-content-center">
+    <table class="table table-bordered table-striped w-50">
+        <tbody>
+            <tr *ngFor="let cuisine of cuisines">
+                <td>
+                    <a [routerLink]="['/cuisine/', cuisine.id]"> {{ cuisine.type | uppercase}} </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="text-center">Click on a Type of Cuisine to see a list of Recipes!</p>

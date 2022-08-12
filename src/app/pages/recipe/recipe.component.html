@@ -1,0 +1,22 @@
+
+<div class="my-3">
+    <p class="h3">List of Recipes</p>
+    <a routerLink="/cuisine" class="btn btn-danger">See Cuisine List</a>
+</div>
+
+<div class="row">
+
+    <div class="col-xs-12 col-sm-6" *ngFor="let recipe of cuisine.recipes">
+        <div class="card mb-4">
+            <div class="card-body">
+                <p class="card-title h4">{{ recipe.name | titlecase }} ({{ recipe.meal }})</p>
+                <p class="card-text h5">Ingredients:</p>
+                <p> {{ recipe.ingredients }}</p>
+                <p class="card-text h5">Steps:</p>
+                <p> {{ recipe.steps }}</p>
+                <button type="text" class="btn btn-success" (click)="likeRecipe( recipe.name )">Like Recipe</button>
+            </div>
+        </div>  
+    </div>
+
+</div>

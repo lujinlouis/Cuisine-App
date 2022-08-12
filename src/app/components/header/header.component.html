@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="navbar-item" routerLink="/">
+                    <img src="assets/CuisineLogo.png" height="75">
+                </a>
+            </div>
+            <div class="navbar-nav">
+                <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+                    routerLink="/">Home</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/cuisine">Cusine</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/comments">Comments</a>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-info mt-3"> {{ title }} </h1>
+</header>
